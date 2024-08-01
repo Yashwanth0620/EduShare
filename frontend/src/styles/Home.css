@@ -1,0 +1,95 @@
+/* HomePage.css */
+
+.home .hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.home .hero h1 {
+  font-size: 2.5em;
+}
+
+.home .hero p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.home .hero-buttons .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.home .bg-image {
+  background-image: linear-gradient(
+      100deg,
+      rgba(245, 70, 66, 0.55),
+      rgba(8, 83, 156, 0.65)
+    ),
+    url("../assets/students.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% center;
+}
+
+.home .bg-image * {
+  color: #fbeaeb;
+}
+
+.home .features {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.home .feature-item {
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home .feature-item:hover {
+  box-shadow: 2px 5px 5px #ffffff57;
+  position: relative;
+  right: 2px;
+  bottom: 2px;
+}
+
+.home .feature-item i {
+  font-size: 3em;
+  color: #007bff;
+}
+
+.home .feature-item h3 {
+  margin: 20px 0 10px;
+}
+
+.home .how-it-works {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.home .step {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home .testimonials {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.home blockquote {
+  margin: 20px 0;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.home cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}

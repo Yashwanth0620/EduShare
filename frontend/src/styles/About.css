@@ -1,0 +1,83 @@
+/* About.css */
+
+.about-container {
+  /* padding: 20px; */
+  font-family: Arial, sans-serif;
+}
+
+.about-hero {
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
+  background-color: #2F3C7E;
+}
+
+.about-hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.about-content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.about-features {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.about-features h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-features li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-footer {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-footer h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-footer p {
+  font-size: 1.1em;
+}
+
+.about-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.about-footer a:hover {
+  text-decoration: underline;
+}
