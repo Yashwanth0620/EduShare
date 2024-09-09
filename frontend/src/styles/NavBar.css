@@ -1,0 +1,17 @@
+.icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.nav-link:hover, .nav-link:focus {
+    color: #f9d3d6 !important;
+}
+.inline-block {
+    display: inline-block;
+}
+
+@media screen and (min-width: 870px) {
+    .small-nav {
+        display: none;
+    }
+}

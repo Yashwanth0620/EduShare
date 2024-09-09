@@ -1,0 +1,24 @@
+.card {
+  border: none;
+}
+
+.card-footer {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-body h5 {
+  font-size: 1.25rem;
+}
+
+.card-footer a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-footer i {
+  transition: transform 0.2s;
+}
+
+.card-footer:hover i {
+  transform: translateX(5px);
+}

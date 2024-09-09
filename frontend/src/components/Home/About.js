@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/About.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faCalendarAlt, faComments, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons';
 
@@ -59,7 +60,7 @@ const About = () => {
 
       <section className="about-footer">
         <h2>Get Started</h2>
-        <p>Ready to enhance your study experience? <a href="/sign-up">Sign up now</a> and join the StudyNet community today!</p>
+        <p>Ready to enhance your study experience? <Link to="/register">Sign up now</Link> and join the StudyNet community today!</p>
       </section>
     </div>
   );

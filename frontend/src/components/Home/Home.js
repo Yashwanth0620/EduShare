@@ -14,7 +14,7 @@ export default function Home() {
               together.
             </p>
             <div className="hero-buttons">
-              <a href="/register`" className="btn btn-primary">
+              <a href="/register" className="btn btn-primary">
                 Get Started
               </a>
               <a href="/login" className="btn btn-outline-light btn-login">
