@@ -1,6 +1,6 @@
+import React, { useState, useEffect } from "react";
 import Auth from "./components/Auth/Auth";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer";
 import Header from "./components/Home/Header";
@@ -13,7 +13,20 @@ import MyGroups from "./components/Groups/MyGroups";
 import Messages from "./components/Groups/Messages";
 
 function App() {
-  const isAuthenticated = !!localStorage.getItem("token");
+  const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem("token"));
+
+  // Update authentication status when the token changes
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setIsAuthenticated(!!localStorage.getItem("token"));
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+    };
+  }, []);
 
   return (
     <BrowserRouter>
@@ -35,7 +48,7 @@ function App() {
             <Header />
             <Routes>
               <Route path="/login" element={<Auth page="login" />} />
-              <Route path="/register" element={<Auth page="register" />} />
+              <Route path="/register" element={<Auth setIsAuthenticated={setIsAuthenticated} page="register" />} />
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />

@@ -2,7 +2,7 @@ import React from "react";
 import Register from "./Register";
 import Login from "./Login";
 
-export default function Auth({page}) {
+export default function Auth({setIsAuthenticated, page}) {
   return (
     <section className="bg-light p-3 p-md-4 p-xl-5">
       <div className="container">
@@ -21,7 +21,7 @@ export default function Auth({page}) {
                 <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
                   <div className="col-12 col-lg-11 col-xl-10">
                     {/* Register Or Login */}
-                    {page === "register" ? (<Register />) : (<Login />)}
+                    {page === "register" ? (<Register setIsAuthenticated={setIsAuthenticated} />) : (<Login />)}
                   </div>
                 </div>
               </div>
